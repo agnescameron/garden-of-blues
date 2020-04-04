@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm-run-all --parallel start:app start:server",
     "start:app": "node index.js",
-    "start:server": "netlify-lambda serve ./lambda"
+    "start:server": "netlify-lambda serve ./lambda",
+    "build": "netlify-lambda build lambda"
   },
   "author": "Agnes Cameron",
   "license": "MIT",
