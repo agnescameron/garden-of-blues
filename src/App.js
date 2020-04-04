@@ -9,8 +9,6 @@ class App extends React.Component {
   render() {
     return (
       <RecipeProvider>
-
-
         <Helmet>
           <title>recipe friendship garden</title>
           <meta name="description" content="nancy and semine's diaspora blues" />

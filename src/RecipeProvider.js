@@ -10,13 +10,18 @@ class RecipeProvider extends React.Component {
     }
     
     componentDidMount() {
+      try{
         fetch(".netlify/functions/fetch")
         .then(function(response) {
           return response.json();
         })
         .then(function(data) {
-          console.log(data)
+          console.log("got a thing!", data)
         })
+      }
+      catch (e) {
+        console.log("error", e)
+      }
     }
 
     render() {
