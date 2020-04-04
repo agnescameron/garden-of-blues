@@ -1,0 +1,11 @@
+{
+  "name": "recipe_friendship_garden",
+  "version": "1.0.0",
+  "description": "A website for Semine and Nancy's recipes, stories and love",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agnes Cameron",
+  "license": "MIT"
+}
