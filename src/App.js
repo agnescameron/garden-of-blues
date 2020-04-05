@@ -8,6 +8,9 @@ import Home from './routes/Home';
 import Recipes from './routes/Recipes';
 import About from './routes/About';
 
+//components
+import RecipePage from './components/RecipePage';
+
 import './App.css';
 
 class App extends React.Component {
@@ -26,7 +29,7 @@ class App extends React.Component {
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/recipes" component={Recipes} />
-            {/*<Route path="/:id" component={RecipePage} />*/}
+            <Route path="/:id" component={RecipePage} />
           </Switch>
 
         </BrowserRouter>
