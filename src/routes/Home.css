@@ -1,12 +1,13 @@
 .home-container{
 	display: grid;
-	grid-template-columns: repeat(10, 150px);
+	grid-template-columns: repeat(10, 200px);
 	grid-template-rows:repeat(8, 150px);
 	grid-gap: 10px;
 }
 
 .garden {
 	border: 2px solid white;
+	padding: 10px;
 }
 
 /*top two rows*/
@@ -120,7 +121,7 @@
   grid-row-end: 9;
 }
 
-.fusion-river {
+.thirst-river {
   grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 5;
