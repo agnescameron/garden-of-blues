@@ -1,0 +1,8 @@
+{
+  "short_name": "Recipe Friendship Garden",
+  "name": "Nancy and Semine's Recipe Friendship Garden",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
