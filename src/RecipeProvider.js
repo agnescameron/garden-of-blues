@@ -29,7 +29,6 @@ class RecipeProvider extends React.Component {
         return (
             <RecipeContext.Provider value={recipes}>
                 {this.props.children}
-          <div>"hello"</div>
             </RecipeContext.Provider>
         );
     }
