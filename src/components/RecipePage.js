@@ -20,7 +20,32 @@ class RecipePage extends React.Component{
 	}
 
   render() {
-  	return ( <div>a recipe</div> );
+
+  	//find recipe from url id
+  	const recipe = this.context.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id)
+  	console.log(recipe ? recipe.Ingredients.replace(/\n/g, '<br>') : '')
+
+  	return ( 
+  		<div>
+  		{ recipe && 
+  			<div>
+	  			<h1>{recipe.RecipeName}</h1>
+	  			<div className="ingredients">
+	  			{recipe.Ingredients.split('\n').map((item, key) => {
+					return <span key={key}>{item}<br/></span>})}
+	  			</div>
+	  			<div className="steps">
+	  			{recipe.Steps.split('\n').map((item, key) => {
+					return <span key={key}>{item}<br/></span>})}
+	  			</div>
+	  			<div className="description">
+	  			{recipe.Description.split('\n').map((item, key) => {
+					return <span key={key}>{item}<br/></span>})}
+	  			</div>
+	  		</div>
+  		}
+  		</div>
+  	 );
 	}
 
 }
