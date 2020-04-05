@@ -30,6 +30,8 @@ class RecipePage extends React.Component{
   		{ recipe && 
   			<div>
 	  			<h1>{recipe.RecipeName}</h1>
+
+	  			{/*this bit is so dumb, i hate react*/}
 	  			<div className="ingredients">
 	  			{recipe.Ingredients.split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
@@ -42,6 +44,7 @@ class RecipePage extends React.Component{
 	  			{recipe.Description.split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
+
 	  		</div>
   		}
   		</div>
