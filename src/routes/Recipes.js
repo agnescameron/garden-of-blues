@@ -6,7 +6,8 @@ class Recipes extends React.Component{
 
   render() {
   	return ( 
-
+  		<div>
+  		<h1>recipe index</h1>
         <RecipeContext.Consumer>
           {recipes => { 
             return (
@@ -17,7 +18,7 @@ class Recipes extends React.Component{
               )
           }}
         </RecipeContext.Consumer>
-      
+      	</div>
   		 );
 	}
 
