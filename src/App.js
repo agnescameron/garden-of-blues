@@ -14,7 +14,6 @@ class App extends React.Component {
           <meta name="description" content="nancy and semine's diaspora blues" />
           <meta name="keywords" content="recipes, honduras, malaysia" />
         </Helmet>
-
       </RecipeProvider>
     );
   }
