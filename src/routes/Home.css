@@ -1,0 +1,156 @@
+.home-container{
+	display: grid;
+	grid-template-columns: repeat(10, 150px);
+	grid-template-rows:repeat(8, 150px);
+	grid-gap: 10px;
+}
+
+.garden {
+	border: 2px solid white;
+}
+
+/*top two rows*/
+
+.japanese-garden {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.vegetable-garden {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.dinner-ideas-1 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.korean-garden {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.tang-hall {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.fruit-garden {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.dinner-ideas-2 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.danish-garden {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/*central river*/
+
+.nancy-river {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.fusion-pool {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.semine-river {
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+/*bottom 3 rows*/
+
+.sour-garden {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.blue-garden {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+.family-garden {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.crunchy-garden {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.fusion-river {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.friend-garden {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+
+.leftover-garden {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.sweet-garden {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.spicy-garden {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
