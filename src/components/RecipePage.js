@@ -23,8 +23,7 @@ class RecipePage extends React.Component{
 
   	//find recipe from url id
   	const recipe = this.context.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id)
-  	console.log(recipe ? recipe.Ingredients.replace(/\n/g, '<br>') : '')
-
+  	
   	return ( 
   		<div>
   		{ recipe && 
