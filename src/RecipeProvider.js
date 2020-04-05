@@ -11,13 +11,19 @@ class RecipeProvider extends React.Component {
     
     componentDidMount() {
       try{
+        // (this.state.recipes.length===0 && 
         fetch(".netlify/functions/fetch")
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          console.log("got a thing!", data)
-        })
+          .then(function(response) {
+            return response.json();
+          })
+          .then( (data) => {
+            let recipeArr = [];
+            data.records.forEach(function(recipe){
+              recipeArr.push(recipe.fields);
+            })
+          this.setState({recipes: recipeArr})
+          })
+        // )
       }
       catch (e) {
         console.log("error", e)
