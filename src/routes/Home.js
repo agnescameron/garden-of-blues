@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './Home.css';
@@ -7,8 +7,9 @@ import { gardens } from '../helpers/gardens'
 
 class Home extends React.Component{
 
+
   render() {
-  	console.log(gardens)
+
   	return ( 
   		<div className="home-container">
   			{gardens && gardens.map((garden, index) => {
