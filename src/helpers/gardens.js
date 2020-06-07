@@ -4,6 +4,7 @@ export const gardens = [
 {
   name: 'The Garden of 2017',
   flower:'❊',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 1,
     gridColumnEnd: 2,
@@ -14,6 +15,7 @@ export const gardens = [
 {
   name: 'Vegetable Garden',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 3,
     gridColumnEnd: 5,
@@ -24,6 +26,7 @@ export const gardens = [
 {
   name: 'Student Budget Garden',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 3,
     gridColumnEnd: 5,
@@ -34,6 +37,7 @@ export const gardens = [
 {
   name: 'Weeds',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 2,
     gridColumnEnd: 3,
@@ -44,6 +48,7 @@ export const gardens = [
 {
   name: 'Well-trimmed Garden',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 5,
     gridColumnEnd: 7,
@@ -54,6 +59,7 @@ export const gardens = [
 {
   name: 'Fine Dining Garden',
   flower:'✾',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 7,
     gridColumnEnd: 9,
@@ -64,6 +70,7 @@ export const gardens = [
 {
   name: 'Fruit Garden',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 7,
     gridColumnEnd: 9,
@@ -74,6 +81,7 @@ export const gardens = [
 {
   name: '!No Honduras nor Malaysia!',
   flower:'✤',
+  numFlowers: 10,
    placement: {
     gridColumnStart: 9,
     gridColumnEnd: 11,
@@ -86,6 +94,7 @@ export const gardens = [
 {
   name: 'Nancy River',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 1,
     gridColumnEnd: 5,
@@ -96,6 +105,7 @@ export const gardens = [
 {
   name: 'Fusion Pool (the punch bowl)',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 5,
     gridColumnEnd: 7,
@@ -106,6 +116,7 @@ export const gardens = [
 {
   name: 'Semine River',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 7,
     gridColumnEnd: 11,
@@ -118,6 +129,7 @@ export const gardens = [
 {
   name: 'Leftovers',
   flower:'❁',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 1,
     gridColumnEnd: 3,
@@ -128,6 +140,7 @@ export const gardens = [
 {
   name: 'Garden of Blues',
   flower:'⚘',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 1,
     gridColumnEnd: 3,
@@ -138,6 +151,7 @@ export const gardens = [
 {
   name: 'Family Garden',
   flower:'✤',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 3,
     gridColumnEnd: 5,
@@ -148,6 +162,7 @@ export const gardens = [
 {
   name: 'Crunchy Garden',
   flower:'❀',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 3,
     gridColumnEnd: 5,
@@ -158,6 +173,7 @@ export const gardens = [
 {
   name: 'Thirst River (romantic meals)',
   flower:'',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 5,
     gridColumnEnd: 7,
@@ -168,6 +184,7 @@ export const gardens = [
 {
   name: 'Friend Garden',
   flower:'❃',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 7,
     gridColumnEnd: 9,
@@ -178,6 +195,7 @@ export const gardens = [
 {
   name: 'Garden of Glues',
   flower:'❋',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 7,
     gridColumnEnd: 9,
@@ -188,6 +206,7 @@ export const gardens = [
 {
   name: 'The Dessert Garden',
   flower:'❁',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 9,
     gridColumnEnd: 11,
@@ -198,6 +217,7 @@ export const gardens = [
 {
   name:'Garden of Textures',
   flower: '✿',
+  numFlowers: 10,
   placement: {
     gridColumnStart: 9,
     gridColumnEnd: 11,
