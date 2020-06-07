@@ -12,31 +12,25 @@ export default class Garden extends React.Component{
 	let flowers = [];
 
 	for(let i=0; i<this.props.garden.numFlowers; i++){
+		let recipeURL;
 		if(recipes.length){
 			const el = Math.floor(Math.random()*recipes.length);
-			const recipeURL = recipes[el].RecipeName.replace(/\W/g, '');
-			flowers.push({
-				'recipeURL': recipeURL,
-				'position': {
-					'left': `${Math.random()*80 + 5}%`,
-					'top': `${Math.random()*60 + 5}%`,
-				}
-			})
+			recipeURL = recipes[el].RecipeName.replace(/\W/g, '');
 		}
-		else {
-			flowers.push({
-				'recipeURL': '',
-				'position': {
-					'left': `${Math.random()*80 + 5}%`,
-					'top': `${Math.random()*60 + 5}%`,
-				}
-			})
-		}
+		else recipeURL = ''
+
+		flowers.push({
+			'recipeURL': recipeURL,
+			'position': {
+				'left': `${Math.random()*80 + 5}%`,
+				'top': `${Math.random()*80 + 5}%`,
+			}
+		})
 	}
 
   	return (
-  		<div>
-  			<p>{this.props.garden.name}</p>
+  		<div className="garden-container">
+  			{this.props.garden.name}
   			{ flowers.map( (flower, index) => {
   				return (
   				<div className='flower' style={flower.position} key={index} >
