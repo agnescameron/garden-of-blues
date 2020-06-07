@@ -11,5 +11,10 @@
 }
 
 .flower {
+  position: absolute;
+}
+
+.garden-container {
+  height: 90%;
   position: relative;
 }
