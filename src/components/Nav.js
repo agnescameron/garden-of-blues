@@ -9,7 +9,14 @@ export default class Nav extends React.Component{
 
 
 	zoom = () => {
-
+		var scale = 'scale(0.6, 0.6)';
+		var origin = '0% 0%';
+		document.getElementById('home').style.webkitTransform =  scale;    // Chrome, Opera, Safari
+		document.getElementById('home').style.msTransform =   scale;       // IE 9
+		document.getElementById('home').style.transform = scale;     // General
+		document.getElementById('home').style.webkitTransformOrigin =  origin;    // Chrome, Opera, Safari
+		document.getElementById('home').style.msTransformOrigin =   origin;       // IE 9
+		document.getElementById('home').style.transformOrigin = origin;     // General
 	}
 
   render() {

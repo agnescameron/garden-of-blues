@@ -10,7 +10,7 @@ class Home extends React.Component{
   render() {
 
   	return ( 
-  		<div className="home-container">
+  		<div className="home-container" id="home">
   			{gardens && gardens.map((garden, index) => {
   				return (
   					<div key={index} className="garden" style={garden.placement}>
