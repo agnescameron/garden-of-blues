@@ -1,5 +1,6 @@
 import React from 'react';
 import RecipeContext from '../RecipeContext';
+import Nav from './Nav';
 
 class RecipePage extends React.Component{
 
@@ -25,6 +26,7 @@ class RecipePage extends React.Component{
   	
   	return ( 
   		<div>
+  		<Nav location="recipePage"></Nav>
   		{ recipe && 
   			<div>
 	  			<h1>{recipe.RecipeName}</h1>
