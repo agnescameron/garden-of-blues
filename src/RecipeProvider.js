@@ -17,6 +17,7 @@ class RecipeProvider extends React.Component {
             return response.json();
           })
           .then( (data) => {
+            console.log(data)
             let recipeArr = [];
             data.records.forEach(function(recipe){
               recipeArr.push(recipe.fields);

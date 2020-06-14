@@ -16,13 +16,12 @@ class RecipePage extends React.Component{
 	componentDidMount() {
 		// store the URL param/slug as id in the state
 		const { id } = this.props.match.params;
+		console.log('matching params')
 		this.setState({id: id})
 	}
 
   render() {
-
-  	//find recipe from url id
-  	const recipe = this.context.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id)
+  	const recipe = this.state.id ? this.context.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id) : undefined
   	
   	return ( 
   		<div>
