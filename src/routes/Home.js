@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Nav from '../components/Nav';
 
 import './Home.css';
 import Garden from '../components/Garden'
@@ -10,6 +11,8 @@ class Home extends React.Component{
   render() {
 
   	return ( 
+      <div>
+      <Nav location="home"></Nav>
   		<div className="home-container" id="home">
   			{gardens && gardens.map((garden, index) => {
   				return (
@@ -18,6 +21,7 @@ class Home extends React.Component{
   					</div>)
   			})}
   		</div>
+      </div>
   	 );
 	}
 
