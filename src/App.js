@@ -21,8 +21,8 @@ class App extends React.Component {
       <RecipeProvider>
         <BrowserRouter>
           <Helmet>
-            <title>recipe friendship garden</title>
-            <meta name="description" content="nancy and semine's diaspora blues" />
+            <title>garden of blues</title>
+            <meta name="description" content="nancy and semine's garden of blues" />
             <meta name="keywords" content="recipes, honduras, malaysia" />
           </Helmet>
           <Switch>  
