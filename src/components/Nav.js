@@ -32,8 +32,8 @@ export default class Nav extends React.Component{
       			<span>about</span>
         </Link>
 
-      	{ zoomed ? <span ref="zoom" onClick={() => this.zoom('scale(0.6, 0.6)', '0% 0%')}>view whole garden</span> :
-      	<span ref="unzoom" onClick={() => this.zoom('scale(1, 1)', '100% 100%')}>explore garden</span> }
+      	{ zoomed ? <span onClick={() => this.zoom('scale(0.6, 0.6)', '0% 0%')}>view whole garden</span> :
+      	<span onClick={() => this.zoom('scale(1, 1)', '100% 100%')}>explore garden</span> }
 
         <Link to={{ pathname: "/ingredients"}} >
       			<span>ingredients</span>
