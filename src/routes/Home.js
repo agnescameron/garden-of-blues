@@ -7,7 +7,6 @@ import { gardens } from '../helpers/gardens'
 
 class Home extends React.Component{
 
-
   render() {
 
   	return ( 
