@@ -9,6 +9,7 @@ import Recipes from './routes/Recipes';
 import About from './routes/About';
 
 //components
+import Nav from './components/Nav';
 import RecipePage from './components/RecipePage';
 
 import './App.css';
@@ -24,7 +25,7 @@ class App extends React.Component {
             <meta name="description" content="nancy and semine's diaspora blues" />
             <meta name="keywords" content="recipes, honduras, malaysia" />
           </Helmet>
-
+                <Nav></Nav>
           <Switch>  
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
