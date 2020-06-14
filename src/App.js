@@ -7,9 +7,9 @@ import { Helmet } from 'react-helmet';
 import Home from './routes/Home';
 import Recipes from './routes/Recipes';
 import About from './routes/About';
+import Ingredients from './routes/Ingredients';
 
 //components
-import Nav from './components/Nav';
 import RecipePage from './components/RecipePage';
 
 import './App.css';
@@ -25,11 +25,11 @@ class App extends React.Component {
             <meta name="description" content="nancy and semine's diaspora blues" />
             <meta name="keywords" content="recipes, honduras, malaysia" />
           </Helmet>
-                <Nav></Nav>
           <Switch>  
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
             <Route exact path="/recipes" component={Recipes} />
+            <Route exact path="/ingredients" component={Ingredients} />
             <Route path="/:id" component={RecipePage} />
           </Switch>
 

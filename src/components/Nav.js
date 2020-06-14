@@ -25,6 +25,17 @@ export default class Nav extends React.Component{
 
   render() {
   	let zoomed=this.state.zoomed;
+  	let gardenNav;
+
+  	if(this.props.location === 'home'){
+  		gardenNav = zoomed ? <span onClick={() => this.zoom('scale(0.6, 0.6)', '0% 0%')}>view whole garden</span> :
+      		<span onClick={() => this.zoom('scale(1, 1)', '100% 100%')}>explore garden</span>
+  	}
+  	else {
+        gardenNav = <Link to={{ pathname: "/"}} >
+      			<span>to garden</span>
+        </Link>
+  	}
 
   	return (
   		<div className="nav">
@@ -32,8 +43,7 @@ export default class Nav extends React.Component{
       			<span>about</span>
         </Link>
 
-      	{ zoomed ? <span onClick={() => this.zoom('scale(0.6, 0.6)', '0% 0%')}>view whole garden</span> :
-      	<span onClick={() => this.zoom('scale(1, 1)', '100% 100%')}>explore garden</span> }
+        {gardenNav}
 
         <Link to={{ pathname: "/ingredients"}} >
       			<span>ingredients</span>
