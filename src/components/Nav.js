@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Nav.css';
 
 export default class Nav extends React.Component{
 
@@ -10,11 +11,13 @@ export default class Nav extends React.Component{
     }
   }
 
-
 	zoom = (scale, origin) => {
+		//change scale
 		document.getElementById('home').style.webkitTransform =  scale;    // Chrome, Opera, Safari
 		document.getElementById('home').style.msTransform =   scale;       // IE 9
 		document.getElementById('home').style.transform = scale;     // General
+
+		//change origin
 		document.getElementById('home').style.webkitTransformOrigin =  origin;    // Chrome, Opera, Safari
 		document.getElementById('home').style.msTransformOrigin =   origin;       // IE 9
 		document.getElementById('home').style.transformOrigin = origin;     // General
