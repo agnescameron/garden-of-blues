@@ -7,8 +7,9 @@ class Recipes extends React.Component{
 
   render() {
   	return ( 
-  		<div>
+      <div>
       <Nav location="recipes"></Nav>
+  		<div className="pageContainer">
   		<h1>recipe index</h1>
         <RecipeContext.Consumer>
           {recipes => { 
@@ -21,6 +22,7 @@ class Recipes extends React.Component{
           }}
         </RecipeContext.Consumer>
       	</div>
+      </div>
   		 );
 	}
 

@@ -28,7 +28,7 @@ class RecipePage extends React.Component{
   		<div>
   		<Nav location="recipePage"></Nav>
   		{ recipe && 
-  			<div>
+  			<div className="pageContainer">
 	  			<h1>{recipe.RecipeName}</h1>
 
 	  			{/*this bit is so dumb, i hate react*/}
