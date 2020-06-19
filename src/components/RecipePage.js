@@ -32,19 +32,20 @@ class RecipePage extends React.Component{
 	  			<h1>{recipe.RecipeName}</h1>
 
 	  			{/*this bit is so dumb, i hate react*/}
-	  			<div className="ingredients">
-	  			{recipe.Ingredients.split('\n').map((item, key) => {
-					return <span key={key}>{item}<br/></span>})}
-	  			</div>
-	  			<div className="steps">
-	  			{recipe.Steps.split('\n').map((item, key) => {
-					return <span key={key}>{item}<br/></span>})}
-	  			</div>
 	  			<div className="description">
-	  			{recipe.Description.split('\n').map((item, key) => {
+	  			{recipe.Description && recipe.Description.split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
 
+	  			<div className="ingredients">
+	  			{recipe.Ingredients && recipe.Ingredients.split('\n').map((item, key) => {
+					return <span key={key}>{item}<br/></span>})}
+	  			</div>
+	  			
+	  			<div className="steps">
+	  			{recipe.Steps && recipe.Steps.split('\n').map((item, key) => {
+					return <span key={key}>{item}<br/></span>})}
+	  			</div>
 	  		</div>
   		}
   		</div>
