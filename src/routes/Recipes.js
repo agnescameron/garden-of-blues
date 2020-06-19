@@ -12,9 +12,9 @@ class Recipes extends React.Component{
   		<div className="pageContainer">
   		<h1>recipe index</h1>
         <RecipeContext.Consumer>
-          {recipes => { 
+          {data => { 
             return (
-              recipes.map((recipe, i) => {
+              data.recipes.map((recipe, i) => {
               // Return the element. Also pass key
                 return (<RecipeCard key={i} index={i} recipe={recipe} />)
               })
