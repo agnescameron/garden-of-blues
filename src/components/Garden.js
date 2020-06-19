@@ -8,7 +8,7 @@ export default class Garden extends React.Component{
   static contextType = RecipeContext;
 
   render() {
-	const recipes = this.context.filter(entry => entry.Gardens ? entry.Gardens.includes(this.props.garden.name) : '')
+	const recipes = this.context.recipes.filter(entry => entry.Gardens ? entry.Gardens.includes(this.props.garden.name) : '')
 	let flowers = [];
 
 	for(let i=0; i<this.props.garden.numFlowers; i++){

@@ -5,7 +5,10 @@ class RecipeProvider extends React.Component {
 	    constructor(props) {
         super(props);
         this.state = {
-        recipes: [],
+        data: {
+          recipes: [],
+          gardens: []
+        },
         };
     }
     
@@ -17,16 +20,23 @@ class RecipeProvider extends React.Component {
           })
           .then( (data) => {
             let recipeArr = [];
-            console.log(data)
             data.recipes.records.forEach(function(recipe){
               recipeArr.push(recipe.fields);
             })
+
+            let gardenArr = [];
             data.gardens.records.forEach(function(garden){
-              console.log('garden ', garden.fields)
+              gardenArr.push(garden.fields);
             })
-          this.setState({recipes: recipeArr})
+
+            this.setState(prevState => ({
+                data: {
+                    ...prevState.data,
+                    recipes: recipeArr,
+                    gardens: gardenArr
+                }
+            }))
           })
-        // )
       }
       catch (e) {
         console.log("error", e)
@@ -34,9 +44,9 @@ class RecipeProvider extends React.Component {
     }
 
     render() {
-	    var recipes = this.state.recipes;
+	    const data = this.state.data;
         return (
-            <RecipeContext.Provider value={recipes}>
+            <RecipeContext.Provider value={data}>
                 {this.props.children}
             </RecipeContext.Provider>
         );

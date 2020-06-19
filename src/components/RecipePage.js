@@ -22,7 +22,7 @@ class RecipePage extends React.Component{
 	}
 
   render() {
-  	const recipe = this.state.id ? this.context.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id) : undefined
+  	const recipe = this.state.id ? this.context.recipes.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id) : undefined
   	
   	return ( 
   		<div>
