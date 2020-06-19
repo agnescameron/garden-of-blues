@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../components/Nav';
+import RecipeContext from '../RecipeContext';
 
 import './Home.css';
 import Garden from '../components/Garden'
@@ -8,7 +9,12 @@ import { gardens } from '../helpers/gardens'
 
 class Home extends React.Component{
 
+  static contextType = RecipeContext;
+
   render() {
+    this.context.gardens.forEach( (garden, index) => {
+      gardens[index].name = garden.Name;
+    })
 
   	return ( 
       <div>
