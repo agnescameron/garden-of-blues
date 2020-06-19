@@ -11,14 +11,11 @@ exports.handler = async (event) => {
 	const recipes = await fetch(`https://api.airtable.com/v0/app379cZrnZxEWyFK/Recipes?maxRecords=${MAX_RECORDS}&view=Grid%20view`, {
  	"headers": {"Authorization": `Bearer ${process_api_key}`} })
  	const recipeData = await recipes.json();
- 	console.log('got recipeData', recipeData)
 
  	//get the gardens
  	const gardens = await fetch(`https://api.airtable.com/v0/app379cZrnZxEWyFK/Gardens?maxRecords=${MAX_RECORDS}&view=Grid%20view`, {
  	"headers": {"Authorization": `Bearer ${process_api_key}`} })
  	const gardenData = await gardens.json();
-
- 	console.log('got gardenData', gardenData)
 
  	const data = {
  		recipes: recipeData,
