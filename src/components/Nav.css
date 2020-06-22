@@ -21,4 +21,7 @@ a {
 .pageContainer{
 	position: absolute;
 	top: 50px;
+	width: 60%;
+	min-width: 450px;
+	max-width: 750px;
 }

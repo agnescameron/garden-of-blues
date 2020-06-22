@@ -5,3 +5,7 @@
 .images > img {
 	max-width: 200px;
 }
+
+.section {
+	margin-bottom: 20px;
+}
