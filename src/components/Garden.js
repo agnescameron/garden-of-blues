@@ -29,7 +29,7 @@ export default class Garden extends React.Component{
 	}
 
   	return (
-  		<div className="garden-container">
+  		<div className='garden-container'>
   			{this.props.garden.name}
   			{ flowers.map( (flower, index) => {
   				return (
