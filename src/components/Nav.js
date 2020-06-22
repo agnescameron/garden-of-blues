@@ -56,7 +56,7 @@ export default class Nav extends React.Component{
       			<span>index</span>
         </Link>
 
-        <a href='http://writing.gardenblues.net'>
+        <a href='https://writing.gardenblues.net'>
             <span>writing</span>
         </a>
 

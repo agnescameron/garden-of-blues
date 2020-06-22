@@ -9,7 +9,7 @@ export const gardens = [
     gridColumnStart: 1,
     gridColumnEnd: 2,
     gridRowStart: 1,
-    gridRowEnd: 3,
+    gridRowEnd: 4,
   },
 },
 {
@@ -31,7 +31,7 @@ export const gardens = [
     gridColumnStart: 2,
     gridColumnEnd: 4,
     gridRowStart: 2,
-    gridRowEnd: 3,
+    gridRowEnd: 4,
   },
 },
 {
@@ -42,7 +42,7 @@ export const gardens = [
     gridColumnStart: 4,
     gridColumnEnd: 5,
     gridRowStart: 1,
-    gridRowEnd: 3,
+    gridRowEnd: 4,
   },
 },
 {
@@ -51,9 +51,9 @@ export const gardens = [
   numFlowers: 10,
   placement: {
     gridColumnStart: 5,
-    gridColumnEnd: 7,
+    gridColumnEnd: 6,
     gridRowStart: 1,
-    gridRowEnd: 3,
+    gridRowEnd: 4,
   },
 },
 {
@@ -61,10 +61,10 @@ export const gardens = [
   flower:'✾',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 7,
+    gridColumnStart: 6,
     gridColumnEnd: 9,
     gridRowStart: 1,
-    gridRowEnd: 2,
+    gridRowEnd: 3,
   },
 },
 {
@@ -72,10 +72,10 @@ export const gardens = [
   flower:'',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 7,
+    gridColumnStart: 6,
     gridColumnEnd: 9,
-    gridRowStart: 2,
-    gridRowEnd: 3,
+    gridRowStart: 3,
+    gridRowEnd: 4,
   },
 },
 {
@@ -86,44 +86,57 @@ export const gardens = [
     gridColumnStart: 9,
     gridColumnEnd: 11,
     gridRowStart: 1,
-    gridRowEnd: 3,
+    gridRowEnd: 4,
   },
 },
 /*central river*/
 
 {
   name: '',
-  flower:'',
+  flower:'~',
   numFlowers: 10,
   placement: {
     gridColumnStart: 1,
     gridColumnEnd: 5,
-    gridRowStart: 3,
+    gridRowStart: 4,
     gridRowEnd: 5,
   },
 },
 {
   name: '',
-  flower:'',
+  flower:'~',
   numFlowers: 10,
   placement: {
     gridColumnStart: 5,
-    gridColumnEnd: 7,
-    gridRowStart: 3,
+    gridColumnEnd: 6,
+    gridRowStart: 4,
     gridRowEnd: 5,
   },
 },
 {
   name: '',
-  flower:'',
+  flower:'~',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 7,
+    gridColumnStart: 6,
     gridColumnEnd: 11,
-    gridRowStart: 3,
+    gridRowStart: 4,
     gridRowEnd: 5,
   },
 },
+
+{
+  name: '',
+  flower:'~',
+  numFlowers: 10,
+  placement: {
+    gridColumnStart: 5,
+    gridColumnEnd: 6,
+    gridRowStart: 5,
+    gridRowEnd: 9,
+  },
+},
+
 /*bottom 3 rows*/
 
 {
@@ -183,22 +196,11 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
-  numFlowers: 10,
-  placement: {
-    gridColumnStart: 5,
-    gridColumnEnd: 7,
-    gridRowStart: 5,
-    gridRowEnd: 9,
-  },
-},
-{
-  name: '',
   flower:'❃',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 7,
-    gridColumnEnd: 10,
+    gridColumnStart: 6,
+    gridColumnEnd: 9,
     gridRowStart: 5,
     gridRowEnd: 6,
   },
@@ -208,8 +210,8 @@ export const gardens = [
   flower:'❋',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 7,
-    gridColumnEnd: 9,
+    gridColumnStart: 6,
+    gridColumnEnd: 8,
     gridRowStart: 6,
     gridRowEnd: 9,
   },
@@ -219,7 +221,7 @@ export const gardens = [
   flower:'❁',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 10,
+    gridColumnStart: 9,
     gridColumnEnd: 11,
     gridRowStart: 5,
     gridRowEnd: 7,
@@ -230,8 +232,8 @@ export const gardens = [
   flower:'❁',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 9,
-    gridColumnEnd: 10,
+    gridColumnStart: 8,
+    gridColumnEnd: 9,
     gridRowStart: 6,
     gridRowEnd: 7,
   },
@@ -241,7 +243,7 @@ export const gardens = [
   flower: '✿',
   numFlowers: 10,
   placement: {
-    gridColumnStart: 9,
+    gridColumnStart: 8,
     gridColumnEnd: 11,
     gridRowStart: 7,
     gridRowEnd: 9,
