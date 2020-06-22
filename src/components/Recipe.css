@@ -1,0 +1,7 @@
+.images {
+	display: flex;
+}
+
+.images > img {
+	max-width: 200px;
+}

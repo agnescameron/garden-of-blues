@@ -2,6 +2,8 @@ import React from 'react';
 import RecipeContext from '../RecipeContext';
 import Nav from './Nav';
 
+import './Recipe.css'
+
 class RecipePage extends React.Component{
 
     constructor(props) {
@@ -23,7 +25,8 @@ class RecipePage extends React.Component{
 
   render() {
   	const recipe = this.state.id ? this.context.recipes.find(entry => entry.RecipeName.replace(/\W/g, '') === this.state.id) : undefined
-  	
+  	if(recipe) console.log(recipe.Photos)
+
   	return ( 
   		<div>
   		<Nav location="recipePage"></Nav>
@@ -46,6 +49,12 @@ class RecipePage extends React.Component{
 	  			{recipe.Steps && recipe.Steps.split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
+
+	  			<div className="images">
+	  			{recipe.Photos && recipe.Photos.map((item, key) => {
+					return <img key={key} src={item.url}/>})}
+	  			</div>
+
 	  		</div>
   		}
   		</div>
