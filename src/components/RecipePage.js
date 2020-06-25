@@ -36,17 +36,17 @@ class RecipePage extends React.Component{
 
 	  			{/*this bit is so dumb, i hate react*/}
 	  			<div className="section">
-	  			{recipe.Description && recipe.Description.split('\n').map((item, key) => {
+	  			{recipe.Description && recipe.Description.trim().split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
 
 	  			<div className="section">
-	  			{recipe.Ingredients && recipe.Ingredients.split('\n').map((item, key) => {
+	  			{recipe.Ingredients && recipe.Ingredients.trim().split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
 	  			
 	  			<div className="section">
-	  			{recipe.Steps && recipe.Steps.split('\n').map((item, key) => {
+	  			{recipe.Steps && recipe.Steps.trim().split('\n').map((item, key) => {
 					return <span key={key}>{item}<br/></span>})}
 	  			</div>
 
