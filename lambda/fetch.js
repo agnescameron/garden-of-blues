@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 const process_api_key = process.env.NANCY_SEMINE_AIRTABLE_KEY;
-const MAX_RECORDS = 50;
+const MAX_RECORDS = 100;
 
 exports.handler = async (event) => {
   // Retrive type of http method
