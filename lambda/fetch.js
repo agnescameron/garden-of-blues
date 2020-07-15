@@ -1,4 +1,5 @@
-import fetch from 'node-fetch';
+// import fetch from 'node-fetch';
+const fetch=require('node-fetch')
 const process_api_key = process.env.NANCY_SEMINE_AIRTABLE_KEY;
 const MAX_RECORDS = 100;
 

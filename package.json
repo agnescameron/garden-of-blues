@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel start:app start:server",
     "start:app": "react-scripts start",
-    "start:server": "netlify-lambda serve lambda",
+    "start:server": "netlify dev -f lambda",
     "build": "run-p build:**",
     "build:app": "react-scripts build",
     "build:lambda": "netlify-lambda build lambda"
