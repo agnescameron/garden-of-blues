@@ -10,14 +10,6 @@ class About extends React.Component{
   		<div className="pageContainer">
   			<h1>nancy and semine’s diaspora blues</h1>
   			<h2>meals from our garden of friendship</h2>
-<<<<<<< Updated upstream
-	  		<div>Our recipes are born out of love for each other. 
-	  		Like Spongebob’s Bikini Bottom, our Zucchini Bottom is a true Garden of Friendship 
-	  		where we nourish and nurture each other in times of heartache, homesickness, finals, 
-	  		and other pains part of this journey that is life. 
-	  		</div>
-=======
-        <img src="../../assets/semine_nancy.jpg"> </img>
 
         <p>Our Garden of Blues is born out of love for each other. Like Spongebob’s Bikini Bottom, our Zucchini Bottom is a true Garden of Friendship where we nourish and nurture each other in times of heartache, homesickness, finals, and other pains part of this marvelous journey that is life. </p>
 
@@ -47,7 +39,6 @@ class About extends React.Component{
 
         <p>After all, we have bigger fish to fry. </p>
 
->>>>>>> Stashed changes
 	  		</div>
   		</div>);
 	}
