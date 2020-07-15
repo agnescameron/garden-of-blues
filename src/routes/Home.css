@@ -18,6 +18,14 @@
 	background-color: #5377D4;
 }
 
+.rocks {
+	background-color: #999966;
+}
+
+.terrace {
+	background-color: #669900;
+}
+
 .flower {
   position: absolute;
 }
