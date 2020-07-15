@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../components/Nav';
+import './Home.css';
 
 class About extends React.Component{
 
@@ -9,7 +10,10 @@ class About extends React.Component{
   		<Nav location="about"></Nav>
   		<div className="pageContainer">
   			<h1>nancy and semine’s diaspora blues</h1>
+
   			<h2>meals from our garden of friendship</h2>
+
+        <img src="./assets/semine_nancy.jpg"/>
 
         <p>Our Garden of Blues is born out of love for each other. Like Spongebob’s Bikini Bottom, our Zucchini Bottom is a true Garden of Friendship where we nourish and nurture each other in times of heartache, homesickness, finals, and other pains part of this marvelous journey that is life. </p>
 
