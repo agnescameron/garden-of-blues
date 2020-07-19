@@ -14,7 +14,7 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
+  flower:'✿',
   numFlowers: 10,
   placement: {
     gridColumnStart: 2,
@@ -25,7 +25,7 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
+  flower:'❁',
   numFlowers: 10,
   placement: {
     gridColumnStart: 2,
@@ -36,7 +36,7 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
+  flower:'⚘',
   numFlowers: 10,
   placement: {
     gridColumnStart: 4,
@@ -47,7 +47,7 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
+  flower:'❀',
   numFlowers: 10,
   placement: {
     gridColumnStart: 5,
@@ -69,7 +69,7 @@ export const gardens = [
 },
 {
   name: '',
-  flower:'',
+  flower:'❀',
   numFlowers: 10,
   placement: {
     gridColumnStart: 6,
