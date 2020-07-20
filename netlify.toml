@@ -1,4 +1,6 @@
 [build]
   functions = "functions/"
   publish = "build/"
-  command = "react-scripts start"
+
+[dev]
+  framework = "create-react-app"
