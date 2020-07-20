@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "netlify dev -f lambda -c 'react-scripts start'",
-    "build": "netlify build",
+    "build": "netlify build"
   },
   "author": "Agnes Cameron",
   "license": "MIT",
