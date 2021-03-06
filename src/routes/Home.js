@@ -12,10 +12,13 @@ class Home extends React.Component{
   static contextType = RecipeContext;
 
   render() {
-    this.context.gardens.forEach( (garden, index) => {
-      gardens[index].name = garden.Name;
-      gardens[index].type = garden.Type;
-    })
+    console.log(gardens)
+    if(this.context.gardens.length > 0) {
+      this.context.gardens.forEach( (garden, index) => {
+        gardens[index].name = garden.Name;
+        gardens[index].type = garden.Type;
+      })
+    }
 
   	return ( 
       <div>

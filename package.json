@@ -4,20 +4,20 @@
   "description": "A website for Semine and Nancy's recipes, stories and love",
   "main": "index.js",
   "scripts": {
-    "start": "netlify dev -f lambda -c 'react-scripts start'",
-    "build": "run-p build:**",
-    "build:app": "react-scripts build",
-    "build:lambda": "netlify-lambda build lambda"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "Agnes Cameron",
   "license": "MIT",
-  "proxy": "http://localhost:9000",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "body-parser": "^1.19.0",
     "create-react-app": "^3.4.1",
+    "dotenv": "^8.2.0",
     "encoding": "^0.1.12",
     "express": "^4.17.1",
     "http-proxy-middleware": "^1.0.3",
