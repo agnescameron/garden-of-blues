@@ -13,10 +13,11 @@ class Home extends React.Component{
 
   render() {
     console.log(gardens)
+    console.log(this.context.gardens)
     if(this.context.gardens.length > 0) {
-      this.context.gardens.forEach( (garden, index) => {
-        gardens[index].name = garden.Name;
-        gardens[index].type = garden.Type;
+      this.context.gardens.forEach( garden => {
+        gardens[garden.Number].name = garden.Name;
+        gardens[garden.Number].type = garden.Type;
       })
     }
 
@@ -26,7 +27,7 @@ class Home extends React.Component{
   		<div className="home-container" id="home">
   			{gardens && gardens.map((garden, index) => {
   				return (
-  					<div key={index} className={ "garden" + ' ' + garden.type} style={garden.placement}>
+  					<div key={index} className={ "garden " + garden.type} style={garden.placement}>
   						<Garden garden={garden}/>
   					</div>)
   			})}
