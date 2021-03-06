@@ -3,5 +3,5 @@ package-lock.json
 functions/
 build/
 
-# Local Netlify folder
-.netlify
+# dotenv file
+.env
