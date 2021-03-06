@@ -1,6 +1,0 @@
-[build]
-  functions = "functions/"
-  publish = "build/"
-
-[dev]
-  framework = "create-react-app"
